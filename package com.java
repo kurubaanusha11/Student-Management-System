@@ -24,10 +24,10 @@ public class StudentManagementJDBC {
             ps.setInt(4, marks);
 
             ps.executeUpdate();
-            System.out.println("✅ Student Added Successfully");
+            System.out.println(" Student Added Successfully");
 
         } catch (SQLException e) {
-            System.out.println("❌ Error Adding Student");
+            System.out.println(" Error Adding Student");
             e.printStackTrace();
         }
     }
@@ -53,7 +53,7 @@ public class StudentManagementJDBC {
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Error Fetching Students");
+            System.out.println("Error Fetching Students");
             e.printStackTrace();
         }
     }
@@ -70,13 +70,13 @@ public class StudentManagementJDBC {
 
             int rows = ps.executeUpdate();
             if (rows > 0) {
-                System.out.println("✅ Student Updated Successfully");
+                System.out.println(" Student Updated Successfully");
             } else {
                 System.out.println("⚠ Student ID Not Found");
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Error Updating Student");
+            System.out.println(" Error Updating Student");
             e.printStackTrace();
         }
     }
@@ -92,13 +92,13 @@ public class StudentManagementJDBC {
 
             int rows = ps.executeUpdate();
             if (rows > 0) {
-                System.out.println("✅ Student Deleted Successfully");
+                System.out.println("Student Deleted Successfully");
             } else {
                 System.out.println("⚠ Student ID Not Found");
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Error Deleting Student");
+            System.out.println(" Error Deleting Student");
             e.printStackTrace();
         }
     }
@@ -159,14 +159,15 @@ public class StudentManagementJDBC {
                     break;
 
                 case 5:
-                    System.out.println("👋 Application Closed");
+                    System.out.println(" Application Closed");
                     sc.close();
                     System.exit(0);
 
                 default:
-                    System.out.println("❌ Invalid Choice");
+                    System.out.println(" Invalid Choice");
             }
         }
     }
 }
+
 
